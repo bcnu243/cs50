@@ -1,0 +1,36 @@
+0.  Pneumonoultramicroscopicsilicovolcanoconiosis 
+(NOO-muh-noh-UL-truh-MY-kruh-SKOP-ik-SIL-i-koh-vol-KAY-no-KOH-nee-O-sis)
+Is a lung disease acuse by the inhalation of very fine silica dust, causing
+inflammation in the lungs. Also the maximum length for a word in dictionary.h.
+
+1.  getrusage returns resource usage measures for 'who'.
+
+2.  There's 3 types of struct rusage, one is RUSAGE_SELF, RUSAGE_CHILDREN, RUSAGE_THREAD.
+
+3.  From what I gathered, 'before' is the time before loading the function, and 'after' is the time
+after the function has loaded. And the 'calculate' function calculates it to a stopwatch like manner.
+
+4.  From the top, down of main. it starts by doing some error checking to make sure you did the correct
+format. Then creates structs 'before' and 'after' (the timing data), as well as creating some doubles
+that will be used to add in the later calculations. And so it continues to prepare the time it takes
+to load 'load' (the function that loads the dictionary), then tracks the time it took to load the function.
+
+Now where the true core code is at. After opening a file called 'text', it begins to create a for loop for
+spell checking. the first if statement is checking to see if the word is alphabetical or has apostrophes.
+If so then it will add 1 to the index. If the string is too long to be a word it will consume remainder of
+the alphabetical string. If there's any words with numbers then it will ignore those and go to the next word.
+Finally, if the word is indeed an actually word, it will call the check function for each word, and tally
+which words are correctly spelled, and tally the words that are misspelled. 
+
+After all the words have been checked, the calculation of the size of the dictionary (as well as unloading the
+dictionary), the program will print out the time of the results, as well as the Total of the runtime.
+
+5.  fgetc gets the input of characters and strings and reads until a newline, where fscanf reads until any blank space.
+
+6.  First of all, is you declare a constant integer. It means that the value cannot be modified. So if it's assigned to
+'check' or 'load' then it can't be changed to something else.
+
+7.  TODO
+8.  TODO
+9.  TODO
+10. TODO

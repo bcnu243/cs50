@@ -1,0 +1,53 @@
+0.  GIF format, stores only 8 bits per pixel which only has a palette size of 256 colors. 
+  
+    JPEG, PNG, and BMP formats can store 24 bits per pixel and the number of colors that
+    can be assigned would be 16,777,216 different colors! However, BMP and PNG
+    can go higher bits per pixel, where PNG can go up to 48, and BMP can go up to 64.
+    But the human eye finds it difficult to distinguish higher bitrates after 24 bits.
+
+1.  GIF may only store 8 bits but is the only format to support animation.
+
+2.  Lossy compression is a compression that loses information during the compression process.
+    The Lossless compress does not lose information.
+    
+3.  The JPEG is a compression that loses from information during the compression process,
+    but can still store 24 bits per pixel.
+    
+4.  When someone deletes a file using some sort of 'delete' or 'erase' command on the computer,
+    then most likely the metadata that pointed to the file is merely rewritten. 
+    Most Operating System's will just remove the file reference and mark the file's blocks as
+    free blocks and can be overwritten.
+    
+5.  The most common ways to properly sanitizing a hard-drive are physically destroying the drive making it unusable.
+    Degaussing the drive to randomize the magnetic domains making it as well unusable in the process.
+    The Overwriting the data so it cannot be recovered.
+    But I recommend doing all 3 of these steps starting with
+    Overwriting the data first, then degaussing, and finally physically destroying the drive.
+    
+6.  stdint.h contains several new types of integers to enhance the portability of programs. The basic integers were
+    insuffient due to their actual sizes are implementation define and may vary across different systems.
+    
+7.  The Exact-Width Integer type is guarenteed to have the same number of bits across all implementations.
+
+8.  A BYTE is an 8 bit unsigned value. A DWORD is a 32-bit unsigned integer. A LONG is a 32-bit signed integer.
+    And a WORD is a 16-bit unsigned integer.
+    
+9.  The first 2 bytes of a BMP file must be the ASCII Character 'B' and then 'M' and those are the "Magic Numbers".
+
+10. bfSize is the size of the BitMap File (in bytes), and biSize is the bytes required by the structure.
+
+11. If biHeight is negative, then the Compression (biCompression) must be either BI_RGB or BI_BITFIELDS.
+
+12. The field that specifies the color depth is biBitCount, this is use to tell if it's an 8-bit, 16-bit, etc.
+
+13. if fopen returns NULL in copy.c:37, it's because there's no output file.
+
+14. The 1 is to tell fread to attempt to read 1 data element which is the size of 'BITMAPINFOHEADER' bytes long.
+
+15. If bi.biWidth = 3, and sizeof(RGBTRIPLE) is 3, then 3 * 3 = 9, then 4-9 = 5, then 5 modulo 4 is -1 then -1 is the answer.
+
+16. fseek sets the file position indicator to the input file, with the offset of padding, and whence set to SEEK_CUR
+    
+17. SEEK_CUR specifies that the offset provided is relative to the beginning of the file.
+
+18. Milo Banana dun it.

@@ -30,7 +30,13 @@ dictionary), the program will print out the time of the results, as well as the 
 6.  First of all, is you declare a constant integer. It means that the value cannot be modified. So if it's assigned to
 'check' or 'load' then it can't be changed to something else.
 
-7.  TODO
-8.  TODO
-9.  TODO
-10. TODO
+7.  I used a Hash Table with Linked Lists. Nothing Really complex, just enough to get the job done.
+
+8.  The first time I timed it, it was around 10 seconds or so for the Large dictionary. Then I managed to shave about
+2 or so seconds just by examining my code and trying to make things simplier.
+ 
+9.  Mainly researching the data structures to see what I could do. And I saw that Hash Tables were used for speedy
+insertions, so I used that think that I wouldn't be inserting anything later or sorting.
+
+10. Unfortunately my code is quite a bit slowly than the staff example. Plus I was still very uncomfortable with Data
+Structures in general.
